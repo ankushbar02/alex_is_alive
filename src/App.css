@@ -1,0 +1,280 @@
+.header {
+  justify-content: center;
+  background-color: white;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+  align-items: center;
+  background-color: white;
+}
+
+.he:hover {
+  color: gray;
+}
+.site {
+  margin: 10px;
+  padding: 10px;
+  animation: glitch 1s linear infinite;
+  background-color: white;
+}
+
+.signup {
+  margin: 30px;
+  background-color: white;
+}
+
+.signup p {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: black;
+}
+.he {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+
+.bAs {
+  margin: 30px;
+  background-color: white;
+}
+.bAs p {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: black;
+}
+
+.optbutton {
+  margin: 30px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.material-symbols-outlined {
+  color: rgb(119, 122, 124);
+}
+.optbutton:hover {
+  background-color: white;
+  animation: scaleup 0.2s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal forwards;
+}
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+.digital {
+  background-color: inherit;
+}
+.digital p {
+  color: black;
+}
+.name {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  font-weight: 800;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: inherit;
+}
+.name p {
+  color: black;
+}
+
+.imagestack {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.imagestack img {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5px;
+
+  /* padding: 0px 10px 0px 10px; */
+  margin: 5px;
+}
+
+.img1 img {
+  height: 40rem;
+}
+
+.img2 img {
+  height: 30rem;
+}
+
+.img3 img {
+  height: 35rem;
+}
+
+.img4 img {
+  height: 20rem;
+}
+
+.img5 img {
+  height: 20rem;
+}
+
+.img1 img:hover {
+  animation: scaleup 1s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal forwards;
+}
+.img2 img:hover {
+  animation: scaleup 1s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal forwards;
+}
+.img3 img:hover {
+  animation: scaleup 1s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal forwards;
+}
+.img4 img:hover {
+  animation: scaleup 1s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal forwards;
+}
+.img5 img:hover {
+  animation: scaleup 1s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal forwards;
+}
+.img1 {
+  background-color: white;
+}
+.img2 {
+  background-color: white;
+}
+.img3 {
+  background-color: white;
+}
+.img4 {
+  background-color: white;
+}
+.img5 {
+  background-color: white;
+}
+
+.im1d div {
+  background-color: white;
+}
+.im1d {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.imagestack p {
+  font-size: small;
+  font-weight: 500;
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+.imgbox {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.text p {
+  color: black;
+  background-color: white;
+  font-family: "Cinzel", serif;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 70px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.footer {
+  background-color: white;
+  display: block;
+  justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer p {
+  color: black;
+}
+
+@keyframes scaleup {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+.text:before,
+.text:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.text:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+.text:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
